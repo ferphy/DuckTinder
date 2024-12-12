@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "275608797308",
+    "project_id": "ducktinder-1ce53",
+    "storage_bucket": "ducktinder-1ce53.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:275608797308:android:8ae6d3ff04f09578c1c9f9",
+        "android_client_info": {
+          "package_name": "com.example.ducktinder_v2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBc4aXHyQ1iCAawbQWanUxAWGtMi-ClJ7I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
