@@ -8,7 +8,7 @@ plugins {
 
 android {
     namespace = "com.example.ducktinder_v2"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.ducktinder_v2"
@@ -33,21 +33,21 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "11"
     }
     buildFeatures {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
+        kotlinCompilerExtensionVersion = "1.5.3"
     }
     packaging {
         resources {
-            excludes += "/META-INF/{AL2.0,LGPL2.1}"
+            excludes += "/META-INF/{AL2.0,LGPL2.1,DEPENDENCIES}"
         }
     }
 }
@@ -78,7 +78,6 @@ dependencies {
     implementation(libs.logging.interceptor)
     //Coil
     implementation(libs.coil.compose)
-    implementation(libs.coil.network.okhttp)
     //Hilt
     implementation(libs.hilt.android)
     kapt(libs.hilt.android.compiler)
@@ -86,9 +85,10 @@ dependencies {
     //Firebase
     implementation(platform(libs.firebase.bom))
     implementation(libs.firebase.crashlytics)
+    implementation (libs.firebase.analytics.ktx)
+
     //Corutines
     implementation(libs.kotlinx.coroutines.android)
     implementation(libs.kotlinx.coroutines.core)
-    implementation(libs.androidx.lifecycle.viewmodel.ktx)
 
 }
